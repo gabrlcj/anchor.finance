@@ -1,0 +1,84 @@
+// Mixins ------------------------------------*/
+@mixin container-size($min, $max) {
+    width: #{'min(#{$min}, #{$max})'};
+}
+
+@mixin respond($breakpoints) {
+    @if $breakpoints == large {
+        @media (min-width: 800px) { @content }
+    };
+    @if $breakpoints == small {
+        @media (max-width: 500px) { @content }
+    };
+}
+
+
+/* Global ========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+    font-size: 93.75%; /* 15px */
+
+    @include respond(large) {
+        font-size: 100%; /* 16px */
+    }
+}
+
+body {
+    background: $beige;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+
+/* Tecnica no Maykao para esconder elementos ========================== */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.container{
+    // width: min(90vw, 800px);
+    @include container-size(90vw, 1000px);
+    margin: auto;
+}
+
+/* button & links ============================= */
+.button {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+button {
+    font: 700 1rem 'Poppins', sans-serif;
+    height: 50px;
+    width: 48%;
+    color: $dark-blue;
+    border: none;
+    background: $soft-green;
+    border: 1px solid #12a454;
+    border-radius: .5rem;
+    cursor: pointer;
+
+    &:hover {
+        background: #60d695;
+    }
+}
+
+/* Titles ========================== */
+h2 {
+    margin-top: 3.2rem;
+    margin-bottom: 0.8rem;
+    color: $dark-greenish;
+}
