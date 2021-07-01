@@ -133,7 +133,7 @@ header #logo span {
 }
 
 #balance .card h3 {
-  font-weight: 400;
+  font-weight: 700;
   font-size: 1rem;
   font-style: italic;
   display: -webkit-box;
@@ -168,6 +168,14 @@ header #logo span {
   margin-top: 1rem;
 }
 
+#balance .card p#expenseDisplay {
+  color: #e92929;
+}
+
+#balance .card p#incomeDisplay {
+  color: #12a454;
+}
+
 #balance .card.total {
   background: #B5DEAD;
   color: #12130F;
@@ -197,7 +205,7 @@ header #logo span {
 }
 
 #transaction #data-table {
-  width: 100%;
+  width: 101%;
   border-spacing: 0 0.5rem;
   color: #40798C;
 }
@@ -250,6 +258,7 @@ header #logo span {
   background: whitesmoke;
   padding: 1rem 2rem;
   border: 0.0625rem ridge #12130F;
+  white-space: nowrap;
 }
 
 #transaction #data-table tbody tr td.description {
@@ -284,6 +293,7 @@ header #logo span {
   text-align: center;
   color: #e92929;
   font-size: 1.8rem;
+  cursor: pointer;
 }
 
 /* Modal =========================== */
