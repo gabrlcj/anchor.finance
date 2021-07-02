@@ -12,7 +12,6 @@
     };
 }
 
-
 /* Global ========================== */
 * {
     margin: 0;
@@ -30,7 +29,7 @@ html {
 }
 
 body {
-    background: $beige;
+    background: $bg;
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
 }
@@ -64,7 +63,7 @@ button {
     font: 700 1rem 'Poppins', sans-serif;
     height: 50px;
     width: 48%;
-    color: $dark-blue;
+    color: $borders-and-text;
     border: none;
     background: $soft-green;
     border: 1px solid #12a454;
@@ -76,9 +75,78 @@ button {
     }
 }
 
+/* Dark mode =========================== */
+.dark-theme {
+    display: flex;
+    align-items: center;
+    margin: .5rem 0;
+} 
+
+/* Button Toggle - Dark mode ========================== */
+.switch {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    width: 3.4rem;
+    height: 1.7rem;
+    margin-left: .5rem;
+
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+
+        &:checked + .slider {
+            background-color: $sun;
+        }
+
+        &:focus + .slider {
+            box-shadow: 0 0 1px $sun;
+        }
+
+        &:checked + .slider::before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $moon;
+        -webkit-transition: .5s;
+        transition: .5s;
+
+        &::before {
+            position: absolute;
+            content: "";
+            height: 1.4rem;
+            width: 1.4rem;
+            left: 3px;
+            bottom: 2px;
+            background-color: $darkmode-details;
+            -webkit-transition: .5s;
+            transition: .5s;
+        }
+
+        &.round {
+            border-radius: 34px;
+
+            &::before {
+                border-radius: 50%;
+            }
+        }
+    }
+} 
+
 /* Titles ========================== */
 h2 {
     margin-top: 3.2rem;
     margin-bottom: 0.8rem;
-    color: $dark-greenish;
+    color: $borders-and-text;
 }

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?ld59ds');
-  src:  url('fonts/icomoon.eot?ld59ds#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?ld59ds') format('truetype'),
-    url('fonts/icomoon.woff?ld59ds') format('woff'),
-    url('fonts/icomoon.svg?ld59ds#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?mrv1dh');
+  src:  url('fonts/icomoon.eot?mrv1dh#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?mrv1dh') format('truetype'),
+    url('fonts/icomoon.woff?mrv1dh') format('woff'),
+    url('fonts/icomoon.svg?mrv1dh#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,20 +26,26 @@
 }
 
 .icon-anchor:before {
-  content: "\e900";
-}
-.icon-arrow-down-circle:before {
-  content: "\e901";
-}
-.icon-arrow-up-circle:before {
   content: "\e902";
 }
-.icon-dollar-sign:before {
+.icon-arrow-down-circle:before {
   content: "\e903";
 }
-.icon-minus-circle:before {
+.icon-arrow-up-circle:before {
   content: "\e904";
 }
-.icon-plus:before {
+.icon-dollar-sign:before {
   content: "\e905";
+}
+.icon-minus-circle:before {
+  content: "\e906";
+}
+.icon-moon:before {
+  content: "\e900";
+}
+.icon-plus:before {
+  content: "\e907";
+}
+.icon-sun:before {
+  content: "\e901";
 }

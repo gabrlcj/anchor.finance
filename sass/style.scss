@@ -3,7 +3,8 @@
 
 /* Header ========================== */
 header {
-    background-color: $light-blue;
+    background-color: $header-bg;
+    transition: ease-in-out .4s;
 
     padding: 3rem 0 11rem;
     text-align: center;
@@ -16,18 +17,18 @@ header {
         font-weight: 700;
         font-size: 3rem;
         margin-right: 1rem;
-        color: $dark-greenish;
-        text-shadow: 1px 1px 0 white;
+        color: $anchor;
+        text-shadow: 1px 1px 0 $anchor;
     }
 
     #logo {
-        color: $dark-greenish;
+        color: $anchor;
         font-weight: 700;
-        text-shadow: 1px 1px 0 white;
+        text-shadow: 1px 1px 0 $anchor;
 
         span {
-            color: $beige;
-            text-shadow: 1px 1px 0 black;
+            color: $span-color;
+            text-shadow: 1px 1px 0 $span-color;
         }
     }
 }
@@ -35,6 +36,7 @@ header {
 /* Balance ========================== */
 #balance {
     margin-top: -8rem;
+    transition: ease-in-out .4s;
 
     @include respond(large) {
         display: grid;
@@ -44,13 +46,14 @@ header {
 
     /* Cards =========================== */
     .card {
-        background: whitesmoke;
+        background: $white-for-dark;
         padding: 1.5rem 2rem;
         border-radius: 0.5rem;
         margin-bottom: 2rem;
-        color: $dark-greenish;
-        border: .0625rem ridge $dark-greenish;
+        color: $borders-and-text;
+        border: .0625rem ridge $borders-and-text;
         white-space: nowrap;
+        transition: ease-in-out .4s;
 
         h3 {
             font-weight: 700;
@@ -94,12 +97,14 @@ header {
 
     .card.total {
         background: $soft-green;
-        color: $dark-greenish;
+        color: $borders-and-text;
+        transition: ease-in-out .4s;
     }
 }
 
 /* Table =========================== */
 #transaction {
+    transition: ease-in-out .4s;
 
     .button.new {
         color: #12a454;
@@ -132,11 +137,12 @@ header {
         thead {
             
             th {
-                background: whitesmoke;
+                background: $white-for-dark;
                 font-weight: 700;
                 padding: 1rem 2rem;
                 text-align: left;
-                border: .0625rem ridge $dark-greenish;
+                border: .0625rem ridge $borders-and-text;
+                transition: ease-in-out .4s;
                 
                 &:first-child {
                     border-radius: 0.5rem 0 0 0.5rem;
@@ -166,15 +172,16 @@ header {
                 
                 &:hover {
                     opacity: 1;
-                    background: white;
+                    background: $white-for-dark;
                     font-weight: 700;
                 }
                 
                 td {
-                    background: whitesmoke;
+                    background: $white-for-dark;
                     padding: 1rem 2rem;
-                    border: .0625rem ridge $dark-greenish;
+                    border: .0625rem ridge $borders-and-text;
                     white-space: nowrap;
+                    transition: ease-in-out .4s;
                     
                     &.description {
                         color: $blue;
@@ -215,6 +222,36 @@ header {
         }
         
     }
+
+    .dark-theme {
+        font-size: 1.7rem;
+
+        .icon-sun {
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            color: $sun;
+            transition: .3s;
+
+            &.show {
+                opacity: 1;
+                visibility: visible;
+                transition: .3s;
+            }
+        }
+
+        .icon-moon {
+            position: relative;
+            color: $moon;
+            transition: .3s;
+
+            &.show {
+                opacity: 0;
+                visibility: hidden;
+                transition: .3s;
+            }
+        }
+    }
 }
 
 /* Modal =========================== */
@@ -223,11 +260,11 @@ header {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
     opacity: 0;
     visibility: hidden;
-    z-index: 1;
-
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: ease-in-out .5s;
 
     display: flex;
     align-items: center;
@@ -239,11 +276,12 @@ header {
     }
 
     .modal {
-        background: $light-blue;
+        background: $header-bg;
         padding: 2.8rem;
         position: relative;
         z-index: 1;
-        border: 3px ridge $beige;
+        border: 3px ridge $borders-and-text;
+        border-radius: .8rem;
 
         #form {
             max-width: 500px;
@@ -253,8 +291,8 @@ header {
                 font-weight: 700;
                 font-style: italic;
                 font-size: 2rem;
-                color: $dark-blue;
-                text-shadow: 1px 1px 0 white;
+                color: $span-color;
+                text-shadow: 1px 1px 0 $borders-and-text;
             }
 
             .input-group {
@@ -272,7 +310,7 @@ header {
                 }
 
                 .help {
-                    color: $purple;
+                    color: $darkmode-bg;
                     opacity: .8;
                 }
             }
@@ -286,7 +324,7 @@ header {
                     width: 48%;
                     height: 50px;
                     text-align: center;
-                    color: $dark-blue;
+                    color: $borders-and-text;
                     background: $soft-red;
                     border: 1px solid $cancel;
                     border-radius: .5rem;
@@ -305,8 +343,8 @@ header {
                 text-align: center;
                 margin-top: 2rem;
                 font-size: 2rem;
-                color: $dark-blue;
-                text-shadow: 1px 1px 0 white;
+                color: $anchor;
+                text-shadow: 1px 1px 0 $anchor;
             }
         }
     }
@@ -318,7 +356,115 @@ footer {
     width: 100%;
     text-align: center;
     height: 50px;
-    color: $dark-greenish;
-    opacity: 1;
+    color: $darkmode-bg;
     text-decoration: underline;
+    transition: ease-in-out .4s;
+}
+
+
+/* Cores do DARK MODE =========================== */
+.dark-mode {
+    background-color: $darkmode-bg;
+    transition: ease-in-out .4s;
+
+    header {
+        background-color: $darkmode-bg-header;
+        transition: ease-in-out .4s;
+
+        .icon-anchor {
+            color: $blue;
+            text-shadow: 1px 1px 0 $borders-and-text;
+        }
+
+        #logo {
+            color: $blue;
+            text-shadow: 1px 1px 0 $borders-and-text;
+
+            span {
+                color: $white-for-dark;
+                text-shadow: 1px 1px 0 $borders-and-text;
+            }
+        }
+    }
+
+    #balance {
+        transition: ease-in-out .4s;
+
+        .card {
+            background: $moon;
+            color: $darkmode-details;
+            border-color: $white-for-dark;
+            transition: ease-in-out .4s;
+        }
+
+        .card.total {
+            background: rgb(6, 60, 6);
+            transition: ease-in-out .4s;
+        }
+    }
+
+    #transaction {
+        transition: ease-in-out .4s;
+
+        #data-table {
+            color: $darkmode-details;
+
+            thead {
+
+                th {
+                    background: $darkmode-bg-header;
+                    transition: ease-in-out .4s;
+                }
+            }
+
+            tbody {
+
+                tr {
+                    
+                    td {
+                        background: $darkmode-bg-header;
+                        transition: ease-in-out .4s;
+
+                        &.description {
+                            color: $darkmode-details;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .modal-overlay {
+
+        .modal {
+            background: $darkmode-bg-header;
+            border-color: $white-for-dark;
+
+            #form {
+                
+                h2{
+                    color: $white-for-dark;
+                    text-shadow: 1px 1px 0 black;
+                }
+
+                input {
+                    background: $bg;
+                }
+
+                .help {
+                    color: $white-for-dark;
+                }
+
+                .icon-anchor {
+                    color: $blue;
+                    text-shadow: 1px 1px 0 $blue;
+                }
+            }
+        }
+    }
+        
+    footer {
+        color: $white-for-dark;
+        transition: ease-in-out .4s;
+    }
 }
