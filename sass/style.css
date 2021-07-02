@@ -12,7 +12,7 @@ html {
   /* 15px */
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   html {
     font-size: 100%;
     /* 16px */
@@ -113,7 +113,7 @@ header #logo span {
   /* Cards =========================== */
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   #balance {
     display: -ms-grid;
     display: grid;
@@ -130,6 +130,7 @@ header #logo span {
   margin-bottom: 2rem;
   color: #12130F;
   border: 0.0625rem ridge #12130F;
+  white-space: nowrap;
 }
 
 #balance .card h3 {
