@@ -13,6 +13,7 @@
     <a href="#sobre">Sobre</a> |
     <a href="#imagens">Imagens</a> |
     <a href="#tecnologias">Tecnologias</a> |
+    <a href="#features">Features</a> |
     <a href="#licença">Licença</a> |
     <a href="#autor">Autor</a>
 </div>
@@ -31,11 +32,49 @@
     <h4>Dark mode da aplicação:</h4>
     <img src="github/../.github/dark-mode.png">
 </div>
-<div align="center">
-    <h4>Light mode da modal da aplicação:</h4>
-    <img width="155em" src="github/../.github/modal.light-mode.png">
-    <h4>Dark mode da modal da aplicação:</h4>
-    <img width="155em" src="github/../.github/modal.dark-mode.png">
-</div>
 
 ---
+
+## Tecnologias
+
+Este projeto foi desenvolvido com as seguintes tecnologias:
+* HTML
+* SASS
+* JavaScript
+
+### Bibliotecas
+* [Google Fonts](https://fonts.google.com/)
+
+### Utilitários
+  * [IcoonMoon](https://icomoon.io/)
+
+---
+
+## Features
+
+- [x] Dark mode
+- [x] Smooth scroll
+- [x] Smooth transitions
+- [x] Site responsivo
+- [x] Confirmação de formulário
+- [x] Modal para adição de contas
+
+<img align="center" height="400px" src="github/../.github/light-mode.png">
+<img align="center" src="github/../.github/dark-mode.png">
+
+---
+
+## Licença
+
+Esse projeto está sob a licença MIT.
+
+---
+
+## Autor
+
+<img style='border-radius: 50px;' width='170px' src="https://unavatar.now.sh/github/gabrlcj">
+<p><b>Gabriel Bittencourt Penteado 🔰</b></p>
+
+Feito com 🤎 por Gabriel B. Penteado. Entre em contato! 👋🏽
+
+[![Linkedin Badge](https://img.shields.io/badge/-Gabriel-orange?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/gabriel-bittencourt-penteado/)](https://www.linkedin.com/in/gabriel-bittencourt-penteado/)
