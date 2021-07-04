@@ -25,14 +25,16 @@
 ---
 
 ## Imagens
+<div align="center">
+    <h4>Light mode da aplicação:</h4>
+    <img src="github/../.github/light-mode.png">
+    <h4>Dark mode da aplicação:</h4>
+    <img src="github/../.github/dark-mode.png">
+</div>
 
-<b align="center">Light mode da aplicação:</b>
-<img src="github/../.github/light-mode.png"><br>
-<b align="center">Dark mode da aplicação:</b>
-<img src="github/../.github/dark-mode.png"><br>
-<b align="left">Light mode da modal da aplicação:</b>
-<img align="center" width="450px" src="github/../.github/modal.light-mode.png"><br>
-<b align="right">Dark mode da modal da aplicação:</b>
-<img align="right" width="450px" src="github/../.github/modal.dark-mode.png"><br>
+<h4 align="left">Light mode da modal da aplicação:</h4>
+<img align="center" width="450px" src="github/../.github/modal.light-mode.png">
+<h4 align="right">Dark mode da modal da aplicação:</h4>
+<img align="right" width="450px" src="github/../.github/modal.dark-mode.png">
 
 ---
