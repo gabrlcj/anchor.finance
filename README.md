@@ -15,6 +15,11 @@
     <a href="#autor">Autor</a>
 </div>
 
+<video width="320" height="240" autoplay>
+  <source src="github/Anchor.finance - mobile.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
 ## Sobre
 **Anchor.finance é uma aplicação para o registro de atividades financeiras(entradas, saídas e total), em sua conta ou para manter organizado em sua rotina, é uma ideia vinda da [Rocketseat](https://github.com/rocketseat-education/maratona-discover-01) e eu tomei a liberdade para implementar mais algumas coisas!**
 
@@ -22,5 +27,5 @@
 
 ## Imagens
 
-<img align="center" width="500px" src="github/../.github/light-mode.png">
-<img align="left" width="500px" src="github/../.github/dark-mode.png">
+<img src="github/../.github/light-mode.png">
+<img src="github/../.github/dark-mode.png">
