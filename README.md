@@ -33,8 +33,8 @@
 </div>
 
 <h4 align="left">Light mode da modal da aplicação:</h4>
-<img align="center" width="450px" src="github/../.github/modal.light-mode.png">
+<img align="center" width="400px" src="github/../.github/modal.light-mode.png">
 <h4 align="right">Dark mode da modal da aplicação:</h4>
-<img align="right" width="450px" src="github/../.github/modal.dark-mode.png">
+<img align="right" width="400px" src="github/../.github/modal.dark-mode.png">
 
 ---
