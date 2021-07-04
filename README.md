@@ -31,8 +31,8 @@
 <b align="center">Dark mode da aplicação:</b>
 <img src="github/../.github/dark-mode.png"><br>
 <b align="left">Light mode da modal da aplicação:</b>
-<img align="left" width="350px" src="github/../.github/modal.light-mode.png"><br>
+<img align="left" width="450px" src="github/../.github/modal.light-mode.png"><br>
 <b align="right">Dark mode da modal da aplicação:</b>
-<img align="right" width="350px" src="github/../.github/modal.dark-mode.png"><br>
+<img align="right" width="450px" src="github/../.github/modal.dark-mode.png"><br>
 
 ---
