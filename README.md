@@ -58,9 +58,8 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 - [x] Site responsivo
 - [x] Confirmação de formulário
 - [x] Modal para adição de contas
-
+<br>
 <img align="center" height="300px" src="github/../.github/modal.light-mode.png">
-<img align="right" height="300px" src="github/../.github/modal.dark-mode.png">
 
 ---
 
