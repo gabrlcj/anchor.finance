@@ -128,7 +128,7 @@ button:hover {
   height: 1.4rem;
   width: 1.4rem;
   left: 3px;
-  bottom: 2px;
+  bottom: 2.5px;
   background-color: #ced6df;
   -webkit-transition: .5s;
   transition: .5s;
@@ -152,6 +152,8 @@ h2 {
 /* Header ========================== */
 header {
   background-color: #80c4ff;
+  -webkit-box-shadow: 0 0 .5rem black;
+          box-shadow: 0 0 .5rem black;
   -webkit-transition: ease-in-out .4s;
   transition: ease-in-out .4s;
   padding: 3rem 0 11rem;
@@ -214,6 +216,8 @@ header #logo span {
   white-space: nowrap;
   -webkit-transition: ease-in-out .4s;
   transition: ease-in-out .4s;
+  -webkit-box-shadow: 0 0 .5rem black;
+          box-shadow: 0 0 .5rem black;
 }
 
 #balance .card h3 {
@@ -301,7 +305,7 @@ header #logo span {
   color: #65afff;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 510px) {
   #transaction #data-table {
     display: block;
     overflow-x: auto;
@@ -571,6 +575,8 @@ footer {
 
 .dark-mode header {
   background-color: #28323e;
+  -webkit-box-shadow: 0 0 .5rem silver;
+          box-shadow: 0 0 .5rem silver;
   -webkit-transition: ease-in-out .4s;
   transition: ease-in-out .4s;
 }
@@ -601,9 +607,12 @@ footer {
   border-color: #fef9ff;
   -webkit-transition: ease-in-out .4s;
   transition: ease-in-out .4s;
+  -webkit-box-shadow: 0 0 .5rem silver;
+          box-shadow: 0 0 .5rem silver;
 }
 
 .dark-mode #balance .card.total {
+  color: #fef9ff;
   background: #063c06;
   -webkit-transition: ease-in-out .4s;
   transition: ease-in-out .4s;

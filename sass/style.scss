@@ -4,6 +4,7 @@
 /* Header ========================== */
 header {
     background-color: $header-bg;
+    box-shadow: 0 0 .5rem black;
     transition: ease-in-out .4s;
 
     padding: 3rem 0 11rem;
@@ -54,6 +55,7 @@ header {
         border: .0625rem ridge $borders-and-text;
         white-space: nowrap;
         transition: ease-in-out .4s;
+        box-shadow: 0 0 .5rem black;
 
         h3 {
             font-weight: 700;
@@ -369,6 +371,7 @@ footer {
 
     header {
         background-color: $darkmode-bg-header;
+        box-shadow: 0 0 .5rem silver;
         transition: ease-in-out .4s;
 
         .icon-anchor {
@@ -395,9 +398,11 @@ footer {
             color: $darkmode-details;
             border-color: $white-for-dark;
             transition: ease-in-out .4s;
+            box-shadow: 0 0 .5rem silver;
         }
 
         .card.total {
+            color: $white-for-dark;
             background: rgb(6, 60, 6);
             transition: ease-in-out .4s;
         }

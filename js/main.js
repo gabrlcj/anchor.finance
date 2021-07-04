@@ -64,7 +64,7 @@ const Transactions = {
 
 const DOM = {
     transactionsContainer: document.querySelector('#data-table tbody'),
-
+    
     addTransaction(transaction, index){
         const tr = document.createElement('tr')
         tr.innerHTML = DOM.innerHTMLTransaction(transaction, index)

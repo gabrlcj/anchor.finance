@@ -8,7 +8,7 @@
         @media (min-width: 900px) { @content }
     };
     @if $breakpoints == small {
-        @media (max-width: 500px) { @content }
+        @media (max-width: 510px) { @content }
     };
 }
 
@@ -128,7 +128,7 @@ button {
             height: 1.4rem;
             width: 1.4rem;
             left: 3px;
-            bottom: 2px;
+            bottom: 2.5px;
             background-color: $darkmode-details;
             -webkit-transition: .5s;
             transition: .5s;
