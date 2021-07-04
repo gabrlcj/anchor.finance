@@ -59,8 +59,8 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 - [x] Confirmação de formulário
 - [x] Modal para adição de contas
 
-<img align="center" height="400px" src="github/../.github/light-mode.png">
-<img align="center" src="github/../.github/dark-mode.png">
+<img align="center" height="300px" src="github/../.github/modal.light-mode.png">
+<img align="center" height="300px" src="github/../.github/modal.dark-mode.png">
 
 ---
 
