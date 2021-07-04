@@ -65,7 +65,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 ## Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE] para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/gabrlcj/anchor.finance/blob/main/LICENSE) para mais detalhes.
 
 ---
 
