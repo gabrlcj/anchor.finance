@@ -31,10 +31,11 @@
     <h4>Dark mode da aplicação:</h4>
     <img src="github/../.github/dark-mode.png">
 </div>
-
-<h4 align="left">Light mode da modal da aplicação:</h4>
-<img align="center" width="400px" src="github/../.github/modal.light-mode.png">
-<h4 align="right">Dark mode da modal da aplicação:</h4>
-<img align="right" width="400px" src="github/../.github/modal.dark-mode.png">
+<div align="center">
+    <h4>Light mode da modal da aplicação:</h4>
+    <img width="155em" src="github/../.github/modal.light-mode.png">
+    <h4>Dark mode da modal da aplicação:</h4>
+    <img width="155em" src="github/../.github/modal.dark-mode.png">
+</div>
 
 ---
