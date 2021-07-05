@@ -566,6 +566,11 @@ footer {
   transition: ease-in-out .4s;
 }
 
+footer .github-profile {
+  text-decoration: none;
+  color: #9040ff;
+}
+
 /* Cores do DARK MODE =========================== */
 .dark-mode {
   background-color: #050a0f;

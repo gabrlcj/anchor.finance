@@ -361,6 +361,11 @@ footer {
     color: $darkmode-bg;
     text-decoration: underline;
     transition: ease-in-out .4s;
+
+    .github-profile {
+        text-decoration: none;
+        color: #9040ff;
+    }
 }
 
 
