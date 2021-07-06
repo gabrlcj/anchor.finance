@@ -53,6 +53,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 ## Features
 
 - [x] Dark mode
+- [x] Local storage
 - [x] Smooth scroll
 - [x] Smooth transitions
 - [x] Site responsivo
